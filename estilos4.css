@@ -1,0 +1,192 @@
+body{
+background-color:whitesmoke;
+color:black ;
+margin: 0px;
+background-color: #e6e6e6;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
+    background: #b3ccff;
+    align-items: center;
+    font-family: Monaco;
+}
+img{
+display:block;
+margin:auto;
+width: 50%;
+}
+nav{
+    flex: 2;
+    margin-top: 40px;
+}
+.menu{
+    position: absolute;
+    right: 50px;
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+    text-transform: uppercase;*/
+}
+
+.menu a:hover{
+    color: #dde0f0;
+}
+
+.logo {
+    background: url(perritos.jpg) no-repeat 80% 80%;
+    flex: 1;
+    font-weight: 300;
+    margin: 5px;
+    background-size: contain;
+    width: 190px;
+    height: 55px;
+    float: left;
+}
+section{
+  flex: 3;
+    margin-top: 120px;
+
+}
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+    font-family: 'Italianno', cursive;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 25px;
+    color: black;
+}
+h2 {
+    font-family: 'Work Sans', sans-serif;
+    margin: 15px 25px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+
+input[type=text], input[type=email], input[type=number],select, textarea {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  resize: vertical;
+}
+input[type=radio] {
+  width: 10%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+input[type=password] {
+  width: 70%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=submit],  input[type=reset]{
+  background-color: #0b5c63;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: #fcba03;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.col-50 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 15px;
+}
+.fila:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit], input[type=reset]  {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 600px){
+        nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
